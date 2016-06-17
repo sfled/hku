@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>HKU - Week 1 - Tables</title>
+	<style>
+		table {
+			background-color: #efefef;
+			float: left; margin-right:2em; margin-bottom: 2em;
+		}
+
+		table, td, th{
+			border:solid 1px #ccc;
+			padding:15px;
+			border-right: solid 2px #999;
+			border-bottom:  solid 2px #999;
+		}
+
+		td:hover, th:hover{
+			border:solid 1px #ddd;
+			padding:15px;
+			background-color: #fff;
+			border-right: solid 2px #ccc;
+			border-bottom:  solid 2px #ccc;
+		}
+
+		td {
+			color:purple;
+			border-right: solid 2px #999;
+			border-bottom:  solid 2px #999;
+			text-align: right;
+		}
+
+		.profit {text-align: left; background-color: lightblue;}
+		.zero {text-align: center; background-color: yellow;}
+		.loss {text-align: right; background-color: red;}
+
+		
+		.t{vertical-align: top} .m{vertical-align: middle} .b{vertical-align: bottom;}
+		.l{text-align:left;} .c{text-align: center;} .r{text-align: right;}
+
+		#nopadding {
+			padding:0;
+		}
+
+		#nopadding th, #nopadding td {
+			padding:0; width:100px; height: 100px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Week 1 - Tables</h1>
+	<p><a href="index.html">Up a level</a>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Skills</th> <th>Difficulty</th> <th>My Level</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>HTML</td> <td>Easy</td> <td>Intermediate</td> 
+			</tr>
+			<tr>
+				<td>CSS</td> <td>Medium</td> <td>Intermediate</td> 
+			</tr>
+			<tr>
+				<td>Javascript</td> <td>Hard</td> <td>Beginner</td> 
+			</tr>
+		</tbody>
+	</table>
+
+		<table>
+		<thead>
+			<tr>
+				<th>Product</th> <th>Income</th> <th>Cost</th> <th>Difference</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Laptops</td> <td>$300</td> <td>$100</td> <td class="profit">$200</td>
+			</tr>
+			<tr>
+				<td>Stationery</td> <td>$150</td> <td>$150</td> <td class="zero">$0</td>
+			</tr>
+			<tr>
+				<td>Chairs</td> <td>$50</td> <td>$300</td> <td class="loss">$250</td>
+			</tr>
+		</tbody>
+	</table>
+
+		<table id="nopadding">
+		<thead>
+			<tr>
+				<th>Product</th> <th>Income</th> <th>Cost</th> </th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td class="t l">Laptops</td> <td class="t c">$300</td> <td class="t r">$100</td> 
+			</tr>
+			<tr>
+				<td class="m l">Paper</td> <td class="m c">$150</td> <td class="m r">$150</td> 
+			</tr>
+			<tr>
+				<td class="b l">Chairs</td> <td class="b c">$50</td> <td class="b t">$300</td> 
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>
