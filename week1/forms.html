@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>HKU - Week 1 - Divs and Spans and Postioning</title>
+	<style>
+	input {margin-left: 2em;}
+
+	</style>
+</head>
+<body>
+	<h1>Week 1 - HTML Form Basics</h1>
+	<p><a href="index.html">Up a level</a>
+
+	<form action="http://www.hashemian.com/tools/form-post-tester.php" method="post">
+	<!-- <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post"> -->
+		<p><label for="name">Name:</label> <input id="name" type="text" name="name" placeholder="Your name."></p>
+		<p><label for="password"></label> Password:<input id="password" type="password" name="password" required=""></p>
+		<p><label for="message">Message: <textarea id="message" name="feedback" rows="2" cols="40" placeholder="Please enter text here."></textarea></p>
+		<p>Please check one or more interests, below:</p>
+		<p><input type="checkbox" name="interest" value="running"> Running
+		<input type="checkbox" name="interest" value="biking" > Biking</p>
+		<p><input type="checkbox" name="interest" value="programming"> Computer Programming</p>
+		<p><input type="checkbox" name="interest" value="music"> Music<input type="checkbox" name="interest" value="reading"> Reading</p>
+
+		<p>What's your level of expertise?</p>
+		<p>
+			<input type="radio" name="expertise" value="low">Low
+			<input type="radio" name="expertise" value="medium" checked>Medium
+			<input type="radio" name="expertise" value="high">High
+		</p>
+
+		<p>
+		Temperature: 
+			<select name="tempToday">
+				<option value="cool">Cool</option>
+				<option value="warm">Warm</option>
+				<option value="hot">Hot</option>
+			</select>
+		</p>
+
+		<p><input type="submit" name="go" value="Submit"> <input type="reset" name="reset" value="Clear">
+
+	</form>
+
+</body>
+</html>
