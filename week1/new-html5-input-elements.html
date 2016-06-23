@@ -15,7 +15,11 @@
 	<form action="http://www.hashemian.com/tools/form-post-tester.php" method="post" enctype="multipart/form-data">
 	<!-- <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post"> -->
 		
-	<input type="file" name="fileUpload">
+	You age: <input type="number" name="age"><br>
+	Your Birthday: <input type="date" name="birthdate"><br>
+	You want to wake up at: <input type="time" name="arise"><br>
+	Favorite color: <input type="color" name="favColor"><br>
+	Mood: Bad<input type="range" name="mood" min="0" max="100" step="5" value="50">Good
 
 	<p><input type="submit" name="go" value="Upload"> <input type="reset" name="reset" value="Clear">
 
